@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>My Art Gallery</title>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        handwritten: ["La Belle Aurore", "cursive"]
+                    },
+                    colors: {
+                        pastelBlue: "#CFE0E8",
+                        pastelWhite: "#F8F9FA",
+                        pastelHover: "#AFCFEA"
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+        <nav class="bg-black p-1 flex flex-col md:flex-row justify-between items-center shadow-md h-15">
+            <h1 class="text-4xl font-bold text-white font-handwritten">My Art Gallery</h1>
+            <div class="flex gap-4 mt-2 md:mt-0 items-center">
+                <a href="https://github.com/AYDev09" target="_blank" class="p-4 text-4xl bg-black text-white rounded-full hover:bg-slate-700 transition">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="index.html" class="text-lg font-semibold text-white px-4 py-2 hover:bg-slate-700 rounded-lg transition">Gallery</a>
+                <a href="about.html" class="text-lg font-semibold text-white px-4 py-2 hover:bg-slate-700 rounded-lg transition">About</a>
+                <a href="contact.html" class="text-lg font-semibold text-white px-4 py-2 hover:bg-slate-700 rounded-lg transition">Contact</a>
+            </div>
+        </nav>
+
+        <div class="flex flex-col md:flex-row items-center justify-center h-[45rem] w-full bg-slate-800 text-white px-12 py-6 border-t-2 border-b-2 border-slate-600">
+            <div class="flex flex-col md:flex-row items-center justify-center w-full bg-slate-800 text-white px-12 py-6 border-t-2 border-b-2 border-slate-600">
+                <img src="assets/frog.jpeg" class="w-68 h-68 object-cover rounded-lg shadow-lg" alt="Aayat's Frog Art">
+                <div class="max-w-2xl text-center md:text-left md:ml-8">
+                    <h1 class="text-5xl font-bold">About Me</h1>
+                    <p class="mt-4 text-2xl leading-relaxed">
+                        I’m Aayat, 15, and I just throw paint on stuff until it looks ✨ kinda ✨ cool. 🎨 Sometimes it works, sometimes it looks like a crime scene—but hey, that’s still art. 😌🖌️
+
+                        Lately, I made KDramaLog, a super serious (not really) app to track all the K-dramas I binge at 3 AM. 📺💖 Because remembering what episode I’m on? Too much work. 😭
+
+                        If I’m not painting or coding, I’m probably staring at a wall, eating snacks, or wondering why my favorite K-drama character just had to die. ✨🎀
+
+                        Also, I "code", but I only know HTML and CSS… 😭
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        <footer class="bg-black h-10 p-1.5">
+            <h1 class="text-center text-xl text-white">© Aayat Mahmood 2025</h1>
+        </footer>
+</body>
+</html>
